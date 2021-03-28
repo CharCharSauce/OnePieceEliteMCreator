@@ -1,0 +1,90 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "LegendaryShard",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "legendary_shard"
+    },
+    {
+      "name": "EpicShard",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "epic_shard"
+    },
+    {
+      "name": "RareShard",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rare_shard"
+    },
+    {
+      "name": "RareShardToEpic",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rare_shard_to_epic"
+    },
+    {
+      "name": "EpicShardToRare",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "epic_shard_to_rare"
+    },
+    {
+      "name": "Coin",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coin"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.one_piece_elite.epic_shard": "Epic Shard",
+      "item.one_piece_elite.coin": "Coin",
+      "item.one_piece_elite.rare_shard": "Rare Shard",
+      "item.one_piece_elite.legendary_shard": "Legendary Shard"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "one_piece_elite",
+    "modName": "One Piece Elite",
+    "version": "1.0.0",
+    "author": "charl, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "modElementsPackage": "onepieceelite",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100112313
+}

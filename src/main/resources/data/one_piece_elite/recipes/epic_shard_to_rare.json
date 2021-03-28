@@ -1,0 +1,13 @@
+{
+  "group": "one_piece_elite",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "one_piece_elite:epic_shard"
+    }
+  ],
+  "result": {
+    "item": "one_piece_elite:rare_shard",
+    "count": 9
+  }
+}

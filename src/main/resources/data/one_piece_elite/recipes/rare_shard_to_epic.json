@@ -1,0 +1,42 @@
+{
+  "group": "one_piece_elite",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "one_piece_elite:rare_shard"
+    },
+    "1": {
+      "item": "one_piece_elite:rare_shard"
+    },
+    "2": {
+      "item": "one_piece_elite:rare_shard"
+    },
+    "3": {
+      "item": "one_piece_elite:rare_shard"
+    },
+    "4": {
+      "item": "one_piece_elite:rare_shard"
+    },
+    "5": {
+      "item": "one_piece_elite:rare_shard"
+    },
+    "6": {
+      "item": "one_piece_elite:rare_shard"
+    },
+    "7": {
+      "item": "one_piece_elite:rare_shard"
+    },
+    "8": {
+      "item": "one_piece_elite:rare_shard"
+    }
+  },
+  "result": {
+    "item": "one_piece_elite:epic_shard",
+    "count": 1
+  }
+}
