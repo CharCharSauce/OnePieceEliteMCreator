@@ -1,0 +1,11 @@
+{
+  "_fv": 17,
+  "_type": "tab",
+  "definition": {
+    "name": "Le Saucy Extension",
+    "icon": {
+      "value": "CUSTOM:Coin"
+    },
+    "showSearch": false
+  }
+}

@@ -1,6 +1,9 @@
 {
+  "item.one_piece_elite.crystal_of_power": "Crystal Of Power",
   "item.one_piece_elite.epic_shard": "Epic Shard",
   "item.one_piece_elite.coin": "Coin",
   "item.one_piece_elite.rare_shard": "Rare Shard",
-  "item.one_piece_elite.legendary_shard": "Legendary Shard"
+  "item.one_piece_elite.legendary_shard": "Legendary Shard",
+  "itemGroup.table_saucy_extension": "Le Saucy Extension",
+  "key.one_piece_elite.g": "OpenEnhancementGUI"
 }
