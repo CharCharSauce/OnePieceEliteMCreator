@@ -22,9 +22,9 @@ import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.arguments.StringArgumentType;
 
 @OnePieceEliteModElements.ModElement.Tag
-public class EnhancementPointsCommand extends OnePieceEliteModElements.ModElement {
-	public EnhancementPointsCommand(OnePieceEliteModElements instance) {
-		super(instance, 10);
+public class EnhancepointsaddCommand extends OnePieceEliteModElements.ModElement {
+	public EnhancepointsaddCommand(OnePieceEliteModElements instance) {
+		super(instance, 12);
 	}
 
 	@Override
@@ -55,6 +55,7 @@ public class EnhancementPointsCommand extends OnePieceEliteModElements.ModElemen
 		{
 			Map<String, Object> $_dependencies = new HashMap<>();
 			$_dependencies.put("entity", entity);
+			$_dependencies.put("cmdparams", cmdparams);
 			EnhancementPointsCommandExecutedProcedure.executeProcedure($_dependencies);
 		}
 		return 0;

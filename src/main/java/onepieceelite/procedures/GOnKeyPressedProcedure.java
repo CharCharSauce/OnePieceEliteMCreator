@@ -1,6 +1,6 @@
 package onepieceelite.procedures;
 
-import onepieceelite.gui.EnhancementPointsGUIGui;
+import onepieceelite.gui.EnhanceGUIGui;
 
 import onepieceelite.OnePieceEliteModElements;
 
@@ -68,12 +68,12 @@ public class GOnKeyPressedProcedure extends OnePieceEliteModElements.ModElement 
 				NetworkHooks.openGui((ServerPlayerEntity) _ent, new INamedContainerProvider() {
 					@Override
 					public ITextComponent getDisplayName() {
-						return new StringTextComponent("EnhancementPointsGUI");
+						return new StringTextComponent("EnhanceGUI");
 					}
 
 					@Override
 					public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
-						return new EnhancementPointsGUIGui.GuiContainerMod(id, inventory, new PacketBuffer(Unpooled.buffer()).writeBlockPos(_bpos));
+						return new EnhanceGUIGui.GuiContainerMod(id, inventory, new PacketBuffer(Unpooled.buffer()).writeBlockPos(_bpos));
 					}
 				}, _bpos);
 			}

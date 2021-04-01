@@ -68,7 +68,7 @@ public class OnePieceEliteModVariables {
 		public INBT writeNBT(Capability<PlayerVariables> capability, PlayerVariables instance, Direction side) {
 			CompoundNBT nbt = new CompoundNBT();
 			nbt.putDouble("EnhancementPoints", instance.EnhancementPoints);
-			nbt.putDouble("HealthEnhanced", instance.HealthEnhanced);
+			nbt.putDouble("SharpnessLevelStorageForEnhancement", instance.SharpnessLevelStorageForEnhancement);
 			return nbt;
 		}
 
@@ -76,13 +76,13 @@ public class OnePieceEliteModVariables {
 		public void readNBT(Capability<PlayerVariables> capability, PlayerVariables instance, Direction side, INBT inbt) {
 			CompoundNBT nbt = (CompoundNBT) inbt;
 			instance.EnhancementPoints = nbt.getDouble("EnhancementPoints");
-			instance.HealthEnhanced = nbt.getDouble("HealthEnhanced");
+			instance.SharpnessLevelStorageForEnhancement = nbt.getDouble("SharpnessLevelStorageForEnhancement");
 		}
 	}
 
 	public static class PlayerVariables {
 		public double EnhancementPoints = 0;
-		public double HealthEnhanced = 0;
+		public double SharpnessLevelStorageForEnhancement = 0;
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				OnePieceEliteMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity),
@@ -116,7 +116,7 @@ public class OnePieceEliteModVariables {
 				.orElse(new PlayerVariables()));
 		PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 		clone.EnhancementPoints = original.EnhancementPoints;
-		clone.HealthEnhanced = original.HealthEnhanced;
+		clone.SharpnessLevelStorageForEnhancement = original.SharpnessLevelStorageForEnhancement;
 		if (!event.isWasDeath()) {
 		}
 	}
@@ -142,7 +142,7 @@ public class OnePieceEliteModVariables {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PlayerVariables()));
 					variables.EnhancementPoints = message.data.EnhancementPoints;
-					variables.HealthEnhanced = message.data.HealthEnhanced;
+					variables.SharpnessLevelStorageForEnhancement = message.data.SharpnessLevelStorageForEnhancement;
 				}
 			});
 			context.setPacketHandled(true);

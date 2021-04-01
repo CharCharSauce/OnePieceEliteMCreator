@@ -91,32 +91,6 @@
       }
     },
     {
-      "name": "HealthEnhanceButtonPressed",
-      "type": "procedure",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "health_enhance_button_pressed",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "EnhancementPointsGUI",
-      "type": "gui",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "enhancement_points_gui"
-    },
-    {
       "name": "EnhancementPointsCommandExecuted",
       "type": "procedure",
       "sortid": 10,
@@ -129,18 +103,13 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "cmdparams",
+            "type": "map"
           }
         ]
       }
-    },
-    {
-      "name": "EnhancementPoints",
-      "type": "command",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "enhancement_points"
     },
     {
       "name": "GOnKeyPressed",
@@ -185,13 +154,22 @@
       "registry_name": "g"
     },
     {
-      "name": "HealthPoints",
-      "type": "procedure",
+      "name": "Enhancepointsadd",
+      "type": "command",
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "health_points",
+      "registry_name": "enhancepointsadd"
+    },
+    {
+      "name": "Enhance",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enhance",
       "metadata": {
         "dependencies": [
           {
@@ -200,6 +178,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "EnhanceGUI",
+      "type": "gui",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enhance_gui"
     }
   ],
   "variable_elements": [
@@ -210,7 +197,7 @@
       "value": "0"
     },
     {
-      "name": "HealthEnhanced",
+      "name": "SharpnessLevelStorageForEnhancement",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
